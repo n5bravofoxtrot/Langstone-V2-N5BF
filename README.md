@@ -1,3 +1,17 @@
+# Langstone-V2-N5BF forked 02/18/2024
+
+# For the 7" Raspberry Pi Display:-
+
+```sh
+wget https://raw.githubusercontent.com/n5bravofoxtrot/Langstone-V2-N5BF/master/install.sh
+chmod +x install.sh
+./install.sh
+```
+
+02/18/24 Everything below this line is the original readme, from which I will move up things needed in the N5BF fork.
+
+#=============================================
+
 # Langstone-V2 SDR Transceiver by Colin Durbridge G4EML
 
 # Now with support for Lime SDR Mini, Lime SDR Mini V2 and Adalm Pluto
