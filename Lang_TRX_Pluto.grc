@@ -1100,7 +1100,7 @@
     <key>analog_sig_source_x</key>
     <param>
       <key>amp</key>
-      <value>0.15 * (CTCSS &gt;0)</value>
+      <value>0.01 * (CTCSS &gt;0)</value>
     </param>
     <param>
       <key>alias</key>
