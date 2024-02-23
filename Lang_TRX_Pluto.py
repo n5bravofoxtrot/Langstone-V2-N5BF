@@ -167,7 +167,7 @@ class Lang_TRX_Pluto(gr.top_block):
         	1, 48000, Rx_Filt_Low, Rx_Filt_High, 100, firdes.WIN_HAMMING, 6.76))
         self.audio_source_0 = audio.source(48000, "hw:CARD=Device,DEV=0", False)
         self.audio_sink_0 = audio.sink(48000, "hw:CARD=Device,DEV=0", False)
-        self.analog_sig_source_x_1_0 = analog.sig_source_f(48000, analog.GR_SIN_WAVE, CTCSS/10.0, 0.15 * (CTCSS >0), 0)
+        self.analog_sig_source_x_1_0 = analog.sig_source_f(48000, analog.GR_SIN_WAVE, CTCSS/10.0, 0.01 * (CTCSS >0), 0)
         self.analog_sig_source_x_1 = analog.sig_source_f(48000, analog.GR_COS_WAVE, 1750, 1.0*ToneBurst, 0)
         self.analog_sig_source_x_0 = analog.sig_source_c(48000, analog.GR_COS_WAVE, 0, 1, 0)
         self.analog_rail_ff_0_0 = analog.rail_ff(-0.99, 0.99)
@@ -394,7 +394,7 @@ class Lang_TRX_Pluto(gr.top_block):
     def set_CTCSS(self, CTCSS):
         self.CTCSS = CTCSS
         self.analog_sig_source_x_1_0.set_frequency(self.CTCSS/10.0)
-        self.analog_sig_source_x_1_0.set_amplitude(0.15 * (self.CTCSS >0))
+        self.analog_sig_source_x_1_0.set_amplitude(0.01 * (self.CTCSS >0))
 
     def get_AMMIC(self):
         return self.AMMIC
