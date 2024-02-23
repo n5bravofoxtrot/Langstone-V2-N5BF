@@ -4,9 +4,9 @@
 # Forked to N5BF 02/18/2024
 # Edited to V2-N5BF 02/22/2024
 
-echo "#########################################"
+echo "##############################################"
 echo "## Installing Langstone-V2-N5BF Transceiver ##"
-echo "#########################################"
+echo "##############################################"
 
 echo "#################################"
 echo "##  Update the Package Manager ##"
@@ -128,9 +128,9 @@ sudo raspi-config nonint do_i2c 0
 
 # install the Langstone Files
 
-echo "####################################"
+echo "#########################################"
 echo "##     Installing Langstone-V2-N5BF    ##"
-echo "####################################"
+echo "#########################################"
 
 git clone https://github.com/n5bravofoxtrot/Langstone-V2-N5BF.git
 mv Langstone-V2-N5BF Langstone
