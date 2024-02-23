@@ -2,6 +2,7 @@
 # Langstone-V2 Install script 
 # Buster Version G4EML 15/11/21
 # Forked to N5BF 02/18/2024
+# Edited to V2-N5BF 02/22/2024
 
 echo "#########################################"
 echo "## Installing Langstone-V2-N5BF Transceiver ##"
