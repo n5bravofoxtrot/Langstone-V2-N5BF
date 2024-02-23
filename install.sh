@@ -1,10 +1,12 @@
 #!/bin/bash
 # Langstone-V2 Install script 
 # Buster Version G4EML 15/11/21
+# Forked to N5BF 02/18/2024
+# Edited to V2-N5BF 02/22/2024
 
-echo "#########################################"
-echo "## Installing Langstone-V2 Transceiver ##"
-echo "#########################################"
+echo "##############################################"
+echo "## Installing Langstone-V2-N5BF Transceiver ##"
+echo "##############################################"
 
 echo "#################################"
 echo "##  Update the Package Manager ##"
@@ -126,12 +128,12 @@ sudo raspi-config nonint do_i2c 0
 
 # install the Langstone Files
 
-echo "####################################"
-echo "##     Installing Langstone-V2    ##"
-echo "####################################"
+echo "#########################################"
+echo "##     Installing Langstone-V2-N5BF    ##"
+echo "#########################################"
 
-git clone https://github.com/g4eml/Langstone-V2.git
-mv Langstone-V2 Langstone
+git clone https://github.com/n5bravofoxtrot/Langstone-V2-N5BF.git
+mv Langstone-V2-N5BF Langstone
 cd Langstone
 chmod +x build
 chmod +x run_lime
